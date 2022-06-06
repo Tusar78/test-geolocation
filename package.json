@@ -1,0 +1,23 @@
+{
+  "name": "test-geolocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tusar78/test-geolocation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tusar78/test-geolocation/issues"
+  },
+  "homepage": "https://github.com/Tusar78/test-geolocation#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

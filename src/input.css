@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .position-container {
+    @apply h-screen w-full grid place-items-center bg-gradient-to-r from-blue-100 via-purple-200 to-blue-100;
+  }
+}
