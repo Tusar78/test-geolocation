@@ -21,6 +21,10 @@
   }
 
   .card__text {
-    @apply text-right p-1 border border-fuchsia-300 rounded-md my-1
+    @apply text-right p-1 border border-fuchsia-300 rounded-md my-1;
+  }
+
+  .card__btn {
+    @apply px-4 py-2 text-white font-semibold shadow-lg rounded-lg block my-2;
   }
 }
