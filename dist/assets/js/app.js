@@ -2,7 +2,8 @@ const displayPosition = document.querySelector(".card__body");
 
 const getLocation = () => {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
+    // navigator.geolocation.getCurrentPosition(showPosition, showError);
+    navigator.geolocation.watchPosition(showPosition, showError);
   } else {
     displayPosition.innerHTML = `
       <p class="text-red-500">Geolocation is not supported by this browser.</p>
@@ -39,5 +40,17 @@ const showError = (error) => {
       <p class="text-red-500">An unknown error occurred.</p>
     `;
       break;
+  }
+};
+
+
+const stopLocation = () => {
+  if (navigator.geolocation) {
+    // navigator.geolocation.getCurrentPosition(showPosition, showError);
+    navigator.geolocation.clearWatch(showPosition, showError);
+  } else {
+    displayPosition.innerHTML = `
+      <p class="text-red-500">Geolocation is not supported by this browser.</p>
+    `;
   }
 };
